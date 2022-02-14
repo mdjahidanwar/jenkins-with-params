@@ -32,7 +32,7 @@ pipeline {
         stage('deploy') {
             steps {
                 echo 'releasing the application'
-                echo "depolying version ${VERSION}"
+                echo "depolying version ${params.VERSION}"
                 
             }
         }
