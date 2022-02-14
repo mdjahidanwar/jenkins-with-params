@@ -3,7 +3,7 @@
 //types - string, choice, booleanparam
 pipeline {
     agent any
-    parameter {
+    parameters {
 //        string(name: 'VERSION', defaultValue: '', description: 'version to deploy on the production')
         choice(name: 'VERSION', choices: ['1.1.0', '1.2.0', '1.3.0'], description: 'your message/notes')
         booleanparam(name: 'executeTests', defaultValue: 'true', description: 'your msg/notes')
